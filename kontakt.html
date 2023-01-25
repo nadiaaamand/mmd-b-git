@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<title>Kontakt</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <header>
+        <nav>
+        <a class="logo" href="om.html"><img src="img/logo.svg" alt="logo af en pentagon"></a>
+        <ul>
+            <li><a href="om.html">Om</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main class="kontaktform">
+        <h1>Kontakt os</h1>
+            <h2>Skriv til os via kontaktformularen nedenunder.</h2>
+    <form>
+        <label class="visually-hidden" for="navn">Navn</label>
+        <input placeholder="Navn" id="navn" type="text" required>
+        
+        <label for="adresse">Adresse</label>
+        <input id="adresse" type="text">
+        
+        <label for="telefon">Telefonnummer</label>
+        <input id="telefon" type="tel">
+        
+        <label for="mail">E-mail</label>
+        <input id="mail" type="email">
+        
+        <label for="sodavand">Vælg sodavand</label>
+        <select id="sodavand" name="select">
+            <option value="0" selected="true" disabled>Vælg sodavand</option>
+            <option value="1">Pepsi</option>
+            <option value="2">Pepsi Max</option>
+            <option value="3">Fanta</option>
+            <option value="4">Sprite</option>
+        
+        </select>
+        
+        <fieldset class="checkbox">
+        <legend>Vælg services du ønsker</legend>
+            
+            <div>
+            <input id="rengøring" name="services" type="checkbox" value="Rengøring">
+            <label for="rengøring">Rengøring</label>
+            </div>
+        
+            <div>
+            <input id="vinduespudser" name="services" type="checkbox" value="Vinduespudser">
+            <label for="vinduespudser">Vinduespudser</label>
+            </div>
+            
+        </fieldset>
+        
+        <label for="besked">Besked</label>
+        <textarea id="besked" rows="8" cols="20"></textarea>
+    
+        <input type="submit" name="submit" value="Send besked">
+    </form>
+        </main>
+</body>
+</html>
